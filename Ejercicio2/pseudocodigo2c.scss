@@ -1,0 +1,11 @@
+Function CalcularAdeudoMensual(lector)
+    totalAdeudo = 0
+
+    listaLibros = lector.listalibros
+
+    Para cada libro en listaLibros
+        precioLibro = libro.CalcularPrecio()
+        totalAdeudo = totalAdeudo + precioLibro
+
+    Devolver totalAdeudo
+Fin Función
