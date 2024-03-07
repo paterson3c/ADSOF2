@@ -1,5 +1,7 @@
 package P3;
 
+import java.util.*;
+
 public class IngredientesTester {
     public static void main(String args[]) {
         IngredientesTester tester = new IngredientesTester();
