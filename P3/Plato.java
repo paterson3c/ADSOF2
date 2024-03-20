@@ -71,10 +71,6 @@ public class Plato extends Comida {
         return ret;
     }
 
-    /** [Plato] Tortilla: INFORMACION NUTRICIONAL DEL PLATO -> Valor energetico: 385.20 kcal, Hidratos de carbono:
-    27.10 g, Grasas: 22.75 g, Saturadas: 1.68 g, Proteinas: 16.20 g, Azucares: 1.20 g, Fibra: 3.90 g, Sodio: 3.40 mg.
-    CONTIENE huevo
-    */
     @Override
     public String toString() {
         String ret;

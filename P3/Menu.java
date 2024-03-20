@@ -45,9 +45,6 @@ public class Menu extends Comida {
     
     @Override
     public String toString() {
-        /** Menu 1 [Macarrones, Tortilla]: INFORMACION NUTRICIONAL DEL MENU -> Valor energetico: 925.40 kcal, Hidratos de
-    carbono: 104.00 g, Grasas: 39.46 g, Saturadas: 4.59 g, Proteinas: 33.88 g, Azucares: 11.70 g, Fibra: 11.11 g,
-    Sodio: 265.00 mg. CONTIENE gluten, huevo, lactosa */
         String ret;
         ret = "Menu " + this.id + " [";
         for (Plato plato : this.platos) {

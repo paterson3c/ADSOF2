@@ -48,9 +48,6 @@ public class Ingrediente extends Comida{
         return this;
     }
 
-    /* * [Huevo] Huevo: INFORMACION NUTRICIONAL POR UNIDAD -> Valor energetico: 84.60 kcal, Hidratos de carbono: 0.35 g,
-Grasas: 6.30 g, Saturadas: 0.20 g, Proteinas: 6.60 g, Azucares: 0.60 g, Fibra: 0.00 g, Sodio: 0.10 mg. CONTIENE
-huevo */
     @Override
     public String toString() {
         String ret;
