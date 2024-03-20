@@ -1,6 +1,12 @@
-package P3;
+package P3.Tester;
 
 import java.util.*;
+
+import P3.Alergeno;
+import P3.Ingrediente;
+import P3.TipoIngrediente;
+import P3.Info.InfoNutricionalPeso;
+import P3.Info.InfoNutricionalUnidad;
 
 public class IngredientesTester {
     public static void main(String args[]) {

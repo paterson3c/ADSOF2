@@ -1,4 +1,4 @@
-package P3;
+package P3.Info;
 
 public abstract class InfoNutricional {
     
@@ -37,7 +37,7 @@ public abstract class InfoNutricional {
     }
 
     public double getGrasasTotales() {
-        return this.carbohidratos;
+        return this.grasasTotales;
     }
     public void setGrasasTotales(double grasasTotales) {
         this.grasasTotales = grasasTotales;
@@ -78,17 +78,11 @@ public abstract class InfoNutricional {
         this.sodio = sodio;
     }
 
-
-    public InfoNutricional add(InfoNutricional info) {
-        this.calorias += info.getCalorias();
-        this.carbohidratos += info.getCarbohidratos();
-        this.grasasTotales += info.getGrasasTotales();
-        this.grasasSaturadas += info.getGrasasSaturadas();
-        this.proteinas += info.getProteinas();
-        this.azucares += info.getAzucares();
-        this.fibra += info.getFibra();
-        this.sodio += info.getSodio();
-        return this;
+    public String toString() {
+        return "Valor energetico: " + String.format("%.2f", calorias) + " kcal, Hidratos de carbono: " +
+        String.format("%.2f", carbohidratos) + " g, Grasas: " + String.format("%.2f", grasasTotales) + " g, Saturadas: " +
+        String.format("%.2f", grasasSaturadas) + " g, Proteinas: " + String.format("%.2f", proteinas) + " g, Azucares: " +
+        String.format("%.2f", azucares) + " g, Fibra: " + String.format("%.2f", fibra) + " g, Sodio: " + String.format("%.2f", sodio) + " mg.";
     }
 
 }

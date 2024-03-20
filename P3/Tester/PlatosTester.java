@@ -1,6 +1,7 @@
-package P3;
+package P3.Tester;
 
 import java.util.Map;
+import P3.*;
 
 public class PlatosTester extends IngredientesTester {
     public static void main(String[] args) {

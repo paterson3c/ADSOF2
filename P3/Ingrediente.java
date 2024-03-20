@@ -2,17 +2,17 @@ package P3;
 
 import java.util.*;
 
-public class Ingrediente {
-    private String name;
+import P3.Info.InfoNutricional;
+
+public class Ingrediente extends Comida{
     private Object type;
-    private InfoNutricional info;
-    private List<Alergeno> alergenos;
+    private double cantidad;
 
     public Ingrediente(String name, Object type, InfoNutricional info) {
-        this.name = name;
+        super.name = name;
         this. type = type;
         this.info = info;
-        this.alergenos = new ArrayList<>();
+        this.alergenos = new HashSet<Alergeno>();
     }
     
     public String getName() {
@@ -36,15 +36,15 @@ public class Ingrediente {
         this.info = info;
     }
 
-    public List<Alergeno> getAlergenos() {
+    public HashSet<Alergeno> getAlergenos() {
         return this.alergenos;
     }
-    public void setAlergenos(List<Alergeno> alergenos) {
+    public void setAlergenos(HashSet<Alergeno> alergenos) {
         this.alergenos = alergenos;
     }
 
     public Ingrediente tieneAlergenos(Alergeno... alergenos) {
-        this.alergenos = Arrays.asList(alergenos);
+        this.alergenos = new HashSet<Alergeno>(Arrays.asList(alergenos));
         return this;
     }
 
@@ -65,4 +65,10 @@ huevo */
         return ret.substring(0, ret.length() - 2);
     }
 
+    public double getCantidad() {
+        return this.cantidad;
+    }
+    public void setCantidad(double cantidad) {
+        this.cantidad = cantidad;
+    }
 }
