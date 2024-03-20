@@ -78,4 +78,17 @@ public abstract class InfoNutricional {
         this.sodio = sodio;
     }
 
+
+    public InfoNutricional add(InfoNutricional info) {
+        this.calorias += info.getCalorias();
+        this.carbohidratos += info.getCarbohidratos();
+        this.grasasTotales += info.getGrasasTotales();
+        this.grasasSaturadas += info.getGrasasSaturadas();
+        this.proteinas += info.getProteinas();
+        this.azucares += info.getAzucares();
+        this.fibra += info.getFibra();
+        this.sodio += info.getSodio();
+        return this;
+    }
+
 }
